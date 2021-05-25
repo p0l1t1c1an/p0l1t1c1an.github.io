@@ -3,7 +3,6 @@
 	--red:   #E00000;
 	--green: #008100;
 	--blue:  #539bf5;
-	--buildhead: #E0E0E0;
     --background: #22272e;
     --banner: #373e47;
     --border: #22272e;
@@ -18,92 +17,47 @@
 	color: var(--red);
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
+
 body {
 	background-color: var(--background);
 	color: var(--text);
-	margin: 15px auto;
-	padding: 0 10px;
+	margin: 0px auto;
+	padding: 0;
     font-family: Sans-Serif;
-}
-
-code {
-	white-space: nowrap;
-}
-
-@media (min-width: 800px) {
-	body {
-		max-width: 85%;
-	}
-}
-
-tt {
-	white-space: pre;
-}
-
-.cmdbox {
-	background: #F5F5F5;
-	border: 1px solid #AAAAAA;
-	overflow: auto;
-	padding: 10px;
-}
-
-/* sidebar layout */
-
-#home body {
 	height: 100%;
-	max-width: 90%;
+	max-width: 1920px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	top: 0;
-	display: table;
 	padding: 0;
 	margin: 0;
-}
-
-#home nav,
-#home article,
-#home figure,
-#home aside {
-	display: table-cell;
-	padding: 4px;
-}
-
-#home nav, 
-#home figure {
-	padding: 8px;
-    padding-right: 14px;
-    border-right: 11px solid;
-	background-color: var(--banner);
-    border-color: var(--border);
-}
-
-#home nav header {
-	margin: 0;
-	font-size: 15pt;
-	font-weight: bolder;
-	white-space: nowrap;
-    color: var(--text);
-}
-
-#home nav ul {
-	margin-top: 0;
-	margin-bottom: 1em;
-	padding-left: 0;
-}
-
-#home nav li {
-	list-style-type: none;
-	list-style-position: inside;
-	margin-left: 0.5em;
+    clear: both;
+    display: block;
 }
 
 #home article {
-    padding-left: 10%;
+    display: block;
+    padding: 4px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
-#home article h2 {
+#home p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#home h2 {
 	margin: 0;
 	text-align: center;
 }
@@ -114,16 +68,7 @@ tt {
 	text-align: center;
 }
 
-#home main,
-#home footer {
-	display: table-row;
-}
-
-#home nav {
-	vertical-align: top;
-}
-
-#home figure {
-	vertical-align: bottom;
+#home main {
+	display: block;
 }
 
