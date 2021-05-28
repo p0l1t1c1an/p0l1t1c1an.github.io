@@ -1,0 +1,153 @@
+
+:root {
+    --delay: 5;
+}
+
+.fadeInOut {
+    max-width: 1920px;
+    max-height: 750px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.fadeInOut img {
+    max-width: 1920px;
+    max-height: 750px;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    grid-column: 1;
+    grid-row: 1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Show image if just single image  */
+.fadeInOut img:only-child {
+    opacity: 1;
+}
+
+/* Two images so animate for 2 */
+.fadeInOut img:first-child:nth-last-child(2),
+.fadeInOut img:first-child:nth-last-child(2) ~ img {
+    animation-name: fade-two;
+    animation-duration: calc(var(--delay) * 2s);
+}
+
+/* Three images so animate for 3 */
+.fadeInOut img:first-child:nth-last-child(3),
+.fadeInOut img:first-child:nth-last-child(3) ~ img {
+    animation-name: fade-three;
+    animation-duration: calc(var(--delay) * 3s);
+}
+
+/* Four images so animate for 4 */
+.fadeInOut img:first-child:nth-last-child(4),
+.fadeInOut img:first-child:nth-last-child(4) ~ img {
+    animation-name: fade-four;
+    animation-duration: calc(var(--delay) * 4s);
+}
+
+/* Five images so animate for 5 */
+.fadeInOut img:first-child:nth-last-child(5),
+.fadeInOut img:first-child:nth-last-child(5) ~ img {
+    animation-name: fade-five;
+    animation-duration: calc(var(--delay) * 5s);
+}
+
+/* Six images so animate for 6 */
+.fadeInOut img:first-child:nth-last-child(6),
+.fadeInOut img:first-child:nth-last-child(6) ~ img {
+    animation-name: fade-six;;
+    animation-duration: calc(var(--delay) * 6s);
+}
+
+.fadeInOut img:nth-child(1) { animation-delay: 0s; z-index: 1; }
+.fadeInOut img:nth-child(2) { animation-delay: calc(var(--delay) * 1s); z-index: 2; }
+.fadeInOut img:nth-child(3) { animation-delay: calc(var(--delay) * 2s); z-index: 3; }
+.fadeInOut img:nth-child(4) { animation-delay: calc(var(--delay) * 3s); z-index: 4; }
+.fadeInOut img:nth-child(5) { animation-delay: calc(var(--delay) * 4s); z-index: 5; }
+.fadeInOut img:nth-child(6) { animation-delay: calc(var(--delay) * 5s); z-index: 6; }
+
+@keyframes fade-two {    
+      0% { opacity: 0; }
+     10% { opacity: 1; }
+     50% { opacity: 1; }
+     60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-three {    
+       0% { opacity: 0; }
+    6.67% { opacity: 1; }
+   33.33% { opacity: 1; }
+      40% { opacity: 0; }
+     100% { opacity: 0; }
+}
+
+@keyframes fade-four {    
+      0% { opacity: 0; }
+      5% { opacity: 1; }
+     25% { opacity: 1; }
+     30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-five {    
+      0% { opacity: 0; }
+      4% { opacity: 1; }
+     20% { opacity: 1; }
+     24% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-six {    
+       0% { opacity: 0; }
+     3.3% { opacity: 1; }
+   16.67% { opacity: 1; }
+      20% { opacity: 0; }
+     100% { opacity: 0; }
+}
+
+/*
+@-moz-keyframes fade {
+    0% {
+        background-image: url("../images/p0l1t1c1an_logo.svg");
+    }
+    100% {
+        background-image: url("../images/headshot.jpg"); 
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        background-image: url("../images/p0l1t1c1an_logo.svg");
+    }
+    100% {
+        background-image: url("../images/headshot.jpg"); 
+    }
+}
+
+@-ms-keyframes fade {
+    0% {
+        background-image: url("../images/p0l1t1c1an_logo.svg");
+    }
+    100% {
+        background-image: url("../images/headshot.jpg"); 
+    }
+}
+
+
+@-o-keyframes fade {
+    0% {
+        background-image: url("../images/p0l1t1c1an_logo.svg");
+    }
+    100% {
+        background-image: url("../images/headshot.jpg"); 
+    }
+}
+*/
