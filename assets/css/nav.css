@@ -47,6 +47,7 @@
 }
 
 .nav li.home a {
+    display: block;
     color: var(--text) !important;
 	text-decoration: none !important;
 }
