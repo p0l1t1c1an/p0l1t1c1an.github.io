@@ -32,8 +32,7 @@
     float: left;
 }
 
-
-.nav li header {
+.nav li header, li.active a {
 	display: block;
 	padding: 5px 10px;
 	color: var(--text) !important;

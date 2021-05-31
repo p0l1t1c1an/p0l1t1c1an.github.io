@@ -28,7 +28,7 @@
     overflow: hidden;
 }
 
-#home body {
+body {
     background-color: var(--background);
 	color: var(--text);
 	margin: 0px auto;
@@ -47,7 +47,7 @@
     display: block;
 }
 
-#home article {
+article {
     display: block;
     padding: 4px;
     margin-left: 10%;
@@ -55,12 +55,12 @@
     font-size: 100%;
 }
 
-#home p {
+p {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-#home h2 {
+h2 {
 	margin: 0;
 	text-align: center;
 }
@@ -71,7 +71,7 @@
 	text-align: center;
 }
 
-#home main {
+main {
 	display: block;
 }
 
