@@ -43,11 +43,15 @@
     text-align: center;
 }
 
+.nav li.active {
+    background-color: var(--blue);
+}
+
 .nav li header:hover, .dropdown:hover {
     background-color: var(--red);
 }
 
-li.dropdown {
+.nav li.dropdown {
     display: block;
 }
 
