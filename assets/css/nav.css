@@ -32,7 +32,7 @@
     float: left;
 }
 
-.nav li header, li.active a {
+.nav li header {
 	display: block;
 	padding: 5px 10px;
 	color: var(--text) !important;
@@ -44,6 +44,11 @@
 
 .nav li.active {
     background-color: var(--blue);
+}
+
+.nav li.home a {
+    color: var(--text) !important;
+	text-decoration: none !important;
 }
 
 .nav li header:hover, .dropdown:hover {
