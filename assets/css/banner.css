@@ -28,7 +28,7 @@
     animation-timing-function: ease-in-out;
 }
 
-/* Show image if just single image  */
+/* Just show the image if alone */
 .fadeInOut img:only-child {
     opacity: 1;
 }
@@ -115,41 +115,3 @@
      100% { opacity: 0; }
 }
 
-/*
-@-moz-keyframes fade {
-    0% {
-        background-image: url("../images/p0l1t1c1an_logo.svg");
-    }
-    100% {
-        background-image: url("../images/headshot.jpg"); 
-    }
-}
-
-@-webkit-keyframes fade {
-    0% {
-        background-image: url("../images/p0l1t1c1an_logo.svg");
-    }
-    100% {
-        background-image: url("../images/headshot.jpg"); 
-    }
-}
-
-@-ms-keyframes fade {
-    0% {
-        background-image: url("../images/p0l1t1c1an_logo.svg");
-    }
-    100% {
-        background-image: url("../images/headshot.jpg"); 
-    }
-}
-
-
-@-o-keyframes fade {
-    0% {
-        background-image: url("../images/p0l1t1c1an_logo.svg");
-    }
-    100% {
-        background-image: url("../images/headshot.jpg"); 
-    }
-}
-*/

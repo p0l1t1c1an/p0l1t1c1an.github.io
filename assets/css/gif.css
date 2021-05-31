@@ -1,0 +1,25 @@
+
+:root {
+	--red:   #E00000;
+	--green: #008100;
+	--blue:  #539bf5;
+    --background: #22272e;
+    --banner: #373e47;
+    --border: #22272e;
+    --text: #EEEEEE;
+}
+
+.gif {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    place-content: left;
+    place-items: left;
+    margin-left: 10%;
+}
+
+.gif img {
+   max-width: 650px;
+   height: auto;
+}
+
