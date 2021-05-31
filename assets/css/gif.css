@@ -1,13 +1,5 @@
 
-:root {
-	--red:   #E00000;
-	--green: #008100;
-	--blue:  #539bf5;
-    --background: #22272e;
-    --banner: #373e47;
-    --border: #22272e;
-    --text: #EEEEEE;
-}
+@import url("/assets/css/colors.css");
 
 .gif {
     display: flex;
