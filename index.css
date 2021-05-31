@@ -20,10 +20,11 @@
 #container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     margin: 0 auto;
-    width: 100%;
     text-align: left;
+    max-width: 1920px;
+    min-width: 640px;
     overflow: hidden;
 }
 
@@ -49,14 +50,14 @@
 #home article {
     display: block;
     padding: 4px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 100%;
 }
 
 #home p {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #home h2 {
