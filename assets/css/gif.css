@@ -8,6 +8,7 @@
     place-content: left;
     place-items: left;
     margin-left: 10%;
+    column-gap: 2%;
 }
 
 .gif img {
