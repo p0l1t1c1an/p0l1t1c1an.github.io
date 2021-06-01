@@ -7,14 +7,16 @@
     'third fourth'
     'fifth sixth';
 
-    max-width: 40%;
+    max-width: 1920px;
     margin-left: 10%;
-    grid-column-gap: 15%;
+    margin-right: 10%;
+    grid-column-gap: 10%;
     grid-row-gap: 5%;
 }
 
 .gif img {
    max-width: 500px;
+   width: 100%;
    height: auto;
 }
 
@@ -23,11 +25,11 @@
    margin-bottom: 10%;
    margin-left: 0;
    margin-right: 0;
-   font-size: 1.25em;
+   font-size: 125%;
 }
 
 .gif ol {
-   font-size: 1.1em;
+   font-size: 110%;
 }
 
 .gif .first {
