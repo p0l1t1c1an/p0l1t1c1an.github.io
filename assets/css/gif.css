@@ -1,10 +1,16 @@
 
 .gif {
     display: grid;
+    
+    grid-template-areas: 
+    'first second'
+    'third fourth'
+    'fifth sixth';
+
     max-width: 40%;
     margin-left: 10%;
-    column-gap: 15%;
-    row-gap: 5%;
+    grid-column-gap: 15%;
+    grid-row-gap: 5%;
 }
 
 .gif img {
@@ -12,33 +18,32 @@
    height: auto;
 }
 
-.gif img:nth-child(1) {
-   grid-row: 1;
-   grid-column: 1;
+.gif p {
+   margin-left: 0%;
+   margin-right: 0%;
 }
 
-.gif p:nth-child(1) {
-   grid-row: 1;
-   grid-column: 2;
+.gif .first {
+   grid-area: first;
 }
 
-.gif img:nth-child(2) {
-   grid-row: 2;
-   grid-column: 2;
+.gif .second {
+   grid-area: second;
 }
 
-.gif p:nth-child(2) {
-   grid-row: 2;
-   grid-column: 1;
+.gif .third {
+   grid-area: third;
 }
 
-.gif img:nth-child(3) {
-   grid-row: 3;
-   grid-column: 1;
+.gif .fourth {
+   grid-area: fourth;
 }
 
-.gif p:nth-child(3) {
-   grid-row: 3;
-   grid-column: 2;
+.gif .fifth {
+   grid-area: fifth;
+}
+
+.gif .sixth {
+   grid-area: sixth;
 }
 
