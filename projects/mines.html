@@ -75,8 +75,32 @@
 	            <link rel="stylesheet" href="/assets/css/gif.css">
                 <div class="gif">
                     <img src="/assets/gif/mines_resize.gif"/>
+                    <p>
+                    As you can see this version of minesweeper is highly configurable via a hidden menu on the right side.
+                    It lets you create a board that ranges 10x10 to 50x50 in size. 
+                    As well, you can set a number of mines that range 10 to 2500 to be placed in the board.
+                    However, the number of mines needs to be less that the total number of tiles or else you just instantly win.
+                    </p>
+
                     <img src="/assets/gif/mines_play_1.gif"/>
+                    <p>
+                    Looking at the video to the right, you can see my keeps track of the amount of time and number of remaining mines in the top bar.
+                    As well, this program handles many different user clicks.
+                    <ol>
+                        <li>A left click will clear a tile. This will either show the number of surrounding mines or will be a mine itself.</li>
+                        <li>A right click will flag a tile. This reduces the count of remaining mines on top.</li>
+                        <li>A middle click on a revealed number tile will clear all tiles around that aren't flagged, if the number of flags matches its number.</li>
+                    </ol>
+                    </p>
+
                     <img src="/assets/gif/mines_play_2.gif"/>
+                    <p>
+                    Now, when the you reveal every non-mine tile the smily face at the top gains shades to signify you win. 
+                    If I were to fix up this program, I would add a pop win / lose message and a dead smile face.
+                    However, that is very unlikely. The program does what is intended - be minesweeper - and I have fun playing it every once and while.
+                    Ultimately, building this program taught me a lot about C development and low level memory management that I find incredibly fun. 
+                    </p>
+
                 </div>
 
             </article>
