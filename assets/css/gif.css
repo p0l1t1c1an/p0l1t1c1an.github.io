@@ -56,3 +56,47 @@
    grid-area: sixth;
 }
 
+@media (max-width: 1440px) {
+   .gif p {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      font-size: 110%;
+   }
+   .gif ol {
+      font-size: 100%;
+   }
+}
+
+@media (max-width: 1200px) {
+   .gif p {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      font-size: 100%;
+   }
+   .gif ol {
+      font-size: 95%;
+   }
+}
+
+@media (max-width: 960px) {
+   .gif p {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-size: 95%;
+   }
+   .gif ol {
+      font-size: 90%;
+   }
+}
+
+@media (max-width: 650px) {
+   .gif p {
+      margin-top: 0;
+      margin-bottom: 1%;
+      font-size: 85%;
+   }
+   .gif ol {
+      font-size: 80%;
+   }
+}
+
