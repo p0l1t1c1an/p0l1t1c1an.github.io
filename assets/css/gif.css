@@ -28,9 +28,9 @@
 
 .gif div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
     text-align: left;
 }
 
