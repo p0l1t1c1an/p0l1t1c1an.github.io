@@ -41,19 +41,9 @@ body {
 article {
     display: block;
     padding: 4px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 100%;
-}
-
-p {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-h2 {
-	margin: 0;
-	text-align: center;
 }
 
 #howdy {

@@ -27,7 +27,7 @@
 	float: left;
 }
 
-.nav li header {
+.nav li a.navtab {
 	display: block;
 	padding: 5px 10px;
 	color: var(--text) !important;
@@ -39,14 +39,6 @@
 
 .nav li.active {
 	background-color: var(--blue);
-}
-
-.nav li.home a {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	color: var(--text) !important;
-	text-decoration: none !important;
 }
 
 .nav li header:hover, .dropdown:hover {
