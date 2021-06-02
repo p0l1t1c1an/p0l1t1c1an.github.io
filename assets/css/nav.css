@@ -1,7 +1,11 @@
 
-@import url("/assets/css/colors.css");
-
 .nav {
+    --red: #e00000;
+	--blue: #2a6dd3;
+    --banner: #373e47;
+    --dropdown: #f5f5f5;
+    --dropdown2: #eeeeee;
+    --text: #eeeeee;
     position: sticky;
     top: 0;
 }

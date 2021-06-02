@@ -1,15 +1,10 @@
 
-@import url("/assets/css/colors.css");
-
-:link {
-	color: var(--blue);
-}
-
-:visited {
-	color: var(--red);
-}
-
 #container {
+    --red: #e00000;
+	--blue: #2a6dd3;
+    --background: #22272e;
+    --text: #eeeeee;
+
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -19,7 +14,16 @@
     min-width: 640px;
 }
 
-body {
+#container :link {
+	color: var(--blue);
+}
+
+#container :visited {
+	color: var(--red);
+}
+
+
+#container body {
     background-color: var(--background);
 	color: var(--text);
 	font-size: 1.1em;
@@ -39,7 +43,7 @@ body {
     display: block;
 }
 
-article {
+#container article {
     display: block;
     padding: 4px;
     margin-left: 20%;
@@ -47,16 +51,12 @@ article {
     font-size: 100%;
 }
 
-#howdy {
+#continer #howdy {
     color: #E00000;
     font-weight: bold;
     text-align: center;
     font-size: 1.25em;
     margin-bottom: 4%;
 	margin-top: 2%;
-}
-
-main {
-	display: block;
 }
 
