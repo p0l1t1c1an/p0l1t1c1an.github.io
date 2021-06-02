@@ -1,5 +1,5 @@
 
-#container {
+.container {
     --red: #e00000;
 	--blue: #2a6dd3;
     --background: #22272e;
@@ -14,16 +14,16 @@
     min-width: 640px;
 }
 
-#container :link {
+.container :link {
 	color: var(--blue);
 }
 
-#container :visited {
+.container :visited {
 	color: var(--red);
 }
 
 
-#container body {
+.container body {
     background-color: var(--background);
 	color: var(--text);
 	font-size: 1.1em;
@@ -43,7 +43,7 @@
     display: block;
 }
 
-#container article {
+.container article {
     display: block;
     padding: 4px;
     margin-left: 20%;
@@ -51,8 +51,8 @@
     font-size: 100%;
 }
 
-#continer #howdy {
-    color: #E00000;
+.continer #howdy {
+    color: var(--red);
     font-weight: bold;
     text-align: center;
     font-size: 1.25em;
