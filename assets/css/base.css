@@ -9,23 +9,12 @@
     min-width: 640px;
 }
 
-main {
+body {
     --red: #e00000;
 	--blue: #2a6dd3;
     --background: #22272e;
     --text: #eeeeee;
-}
 
-main:link {
-	color: var(--blue);
-}
-
-main:visited {
-	color: var(--red);
-}
-
-
-main body {
     background-color: var(--background);
 	color: var(--text);
 	font-size: 1.1em;
@@ -45,7 +34,15 @@ main body {
     display: block;
 }
 
-main article {
+body:link {
+	color: var(--blue);
+}
+
+body:visited {
+	color: var(--red);
+}
+
+body article {
     display: block;
     padding: 4px;
     margin-left: 20%;
@@ -53,7 +50,7 @@ main article {
     font-size: 100%;
 }
 
-main #howdy {
+body #howdy {
     color: var(--red);
     font-weight: bold;
     text-align: center;
