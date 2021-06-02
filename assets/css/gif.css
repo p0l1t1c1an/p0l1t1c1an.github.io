@@ -8,8 +8,6 @@
     'fifth sixth';
 
     max-width: 1920px;
-    margin-left: 10%;
-    margin-right: 10%;
     grid-column-gap: 10%;
     grid-row-gap: 5%;
 }
@@ -23,8 +21,6 @@
 .gif p {
    margin-top: 20%;
    margin-bottom: 10%;
-   margin-left: 0;
-   margin-right: 0;
    font-size: 125%;
 }
 
