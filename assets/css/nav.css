@@ -1,6 +1,11 @@
 
 @import url("/assets/css/colors.css");
 
+.nav {
+    position: sticky;
+    top: 0;
+}
+
 /* Drop-down menu */
 .nav ul {
 	display: flex;
@@ -10,8 +15,6 @@
 	margin: 0;
 	padding: 0;
 	background-color: var(--banner);	 
-	position: sticky;
-	top: 0;
 	max-width: 1920px;
 }
 
