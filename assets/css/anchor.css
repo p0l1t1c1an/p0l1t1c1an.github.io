@@ -1,0 +1,12 @@
+
+/* 
+ * Used as links go above the actual content
+ * since I have a sticky nav bar. 
+ */
+a.anchor {
+    display: block;
+    position: relative;
+    top: calc(-1.7em - 10px);
+    visibility: hidden;
+}
+
