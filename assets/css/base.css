@@ -63,3 +63,10 @@ body #howdy {
 	margin-top: 2%;
 }
 
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--text) !important;
+        color: var(--background) !important;
+    }
+}
+
