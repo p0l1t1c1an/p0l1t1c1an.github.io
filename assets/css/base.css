@@ -1,10 +1,5 @@
 
-.container {
-    --red: #e00000;
-	--blue: #2a6dd3;
-    --background: #22272e;
-    --text: #eeeeee;
-
+#container {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -14,16 +9,23 @@
     min-width: 640px;
 }
 
-.container :link {
+main {
+    --red: #e00000;
+	--blue: #2a6dd3;
+    --background: #22272e;
+    --text: #eeeeee;
+}
+
+main:link {
 	color: var(--blue);
 }
 
-.container :visited {
+main:visited {
 	color: var(--red);
 }
 
 
-.container body {
+main body {
     background-color: var(--background);
 	color: var(--text);
 	font-size: 1.1em;
@@ -43,7 +45,7 @@
     display: block;
 }
 
-.container article {
+main article {
     display: block;
     padding: 4px;
     margin-left: 20%;
@@ -51,7 +53,7 @@
     font-size: 100%;
 }
 
-.continer #howdy {
+main #howdy {
     color: var(--red);
     font-weight: bold;
     text-align: center;
