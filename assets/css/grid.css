@@ -1,32 +1,58 @@
 
-.gif {
+.grid {
     display: grid;
-    
-    grid-template-areas: 
-    'first second'
-    'third fourth'
-    'fifth sixth';
-
     max-width: 1920px;
     grid-column-gap: 10%;
     grid-row-gap: 5%;
 }
 
-.gif img {
+.two-item-grid {    
+    grid-template-areas: 'first second';
+}
+
+.three-item-grid {
+    grid-template-areas: 
+    'first second'
+    'third third';
+}
+
+.five-item-grid-alt {
+    grid-template-areas: 
+    'first empty'
+    'second third'
+    'fourth fifth';
+}
+
+.six-item-grid {    
+    grid-template-areas: 
+    'first second'
+    'third fourth'
+    'fifth sixth';
+}
+
+.seven-item-grid-alt {
+    grid-template-areas: 
+    'first empty'
+    'second third'
+    'fourth fifth'
+    'sixth seventh';
+}
+
+.grid img {
    max-width: 500px;
    width: 100%;
    height: auto;
 }
 
-.gif p {
+.grid p {
    font-size: 125%;
 }
 
-.gif ol {
+.grid ol {
    font-size: 110%;
 }
 
-.gif div {
+.grid div {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -34,62 +60,62 @@
     text-align: left;
 }
 
-.gif .first {
+.grid .first {
    grid-area: first;
 }
 
-.gif .second {
+.grid .second {
    grid-area: second;
 }
 
-.gif .third {
+.grid .third {
    grid-area: third;
 }
 
-.gif .fourth {
+.grid .fourth {
    grid-area: fourth;
 }
 
-.gif .fifth {
+.grid .fifth {
    grid-area: fifth;
 }
 
-.gif .sixth {
+.grid .sixth {
    grid-area: sixth;
 }
 
 @media (max-width: 1440px) {
-   .gif p {
+   .grid p {
       font-size: 110%;
    }
-   .gif ol {
+   .grid ol {
       font-size: 100%;
    }
 }
 
 @media (max-width: 1200px) {
-   .gif p {
+   .grid p {
       font-size: 100%;
    }
-   .gif ol {
+   .grid ol {
       font-size: 95%;
    }
 }
 
 @media (max-width: 960px) {
-   .gif p {
+   .grid p {
       font-size: 95%;
    }
-   .gif ol {
+   .grid ol {
       font-size: 90%;
    }
 }
 
 @media (max-width: 650px) {
-   .gif p {
+   .grid p {
       font-size: 85%;
    }
-   .gif ol {
+   .grid ol {
       font-size: 80%;
    }
 }
