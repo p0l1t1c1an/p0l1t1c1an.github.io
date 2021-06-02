@@ -41,7 +41,7 @@
 	background-color: var(--blue);
 }
 
-.nav li a:hover, .dropdown:hover {
+.nav li .navtab:hover, .dropdown:hover {
 	background-color: var(--red);
 }
 
