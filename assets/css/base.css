@@ -22,7 +22,8 @@
 body {
     background-color: var(--background);
 	color: var(--text);
-	margin: 0px auto;
+	font-size: 1.1em;
+    margin: 0px auto;
 	padding: 0;
     font-family: Helvetica, Arial, sans-serif;
 	height: 100%;
