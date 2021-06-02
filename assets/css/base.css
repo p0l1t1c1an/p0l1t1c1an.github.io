@@ -34,12 +34,16 @@ body {
     display: block;
 }
 
-body:link {
+body a:link {
 	color: var(--blue);
 }
 
-body:visited {
+body a:visited {
 	color: var(--red);
+}
+
+body a:active {
+    color: var(--red);
 }
 
 body article {
