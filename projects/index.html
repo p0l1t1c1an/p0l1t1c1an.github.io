@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 	<title>p0l1t1c1an</title>
-	<meta name="description" content="Home page for Jacob Boicken/p0l1t1c1an's home page">
+	<meta name="description" content="Project page for Jacob Boicken/p0l1t1c1an's home page">
 	<link rel="canonical" href="https://p0l1t1c1an.github.io">
 	<link rel="stylesheet" href="/assets/css/projects.css">
 </head>
@@ -41,11 +41,11 @@
         <li class="dropdown active">
            <a class="navtab" href="/projects/">Projects</a>
            <div class="dropdown-content">
-              <a href="/projects/#mines">Mines</a>
-              <a href="/projects/#bsdfan">bsdfan-rs</a>
-              <a href="/projects/#gitstatus">gitstatus-rs</a>
-              <a href="/projects/#septem">Septem</a>
               <a href="/projects/#server">Homeserver</a>
+              <a href="/projects/#septem">Septem</a>
+              <a href="/projects/#bsdfan">bsdfan-rs</a>
+              <a href="/projects/#mines">Mines</a>
+              <a href="/projects/#gitstatus">gitstatus-rs</a>
            </div>
         </li>
         
@@ -63,51 +63,50 @@
         <main>
             <article>
                 <p id="howdy">
-                This is my first and earliest project that I wrote to teach myself C in high school.
-                It's just a simple minesweeper clone. I drew all the images using inkscape and the toolkit is GTK3.
+                Below you can find information about some of my homeserver and programming projects.
+                I have information about all of these on my <a href="https://github.com/p0l1t1c1an">github page</a>.
+                These range from simple one file programs to intricate multi-threaded asynchronous programs. 
                 </p>
-               
-                <div class="grid two-item-grid">
-                    <img class="first" src=""/>
-                    <img class="second" src=""/>
-                </div>
+                
+                <a class="anchor" id="server"></a>
+                <h2>Homeserver</h2> 
+
+                <a class="anchor" id="septem"></a>
+                <h2>Septem</h2> 
+                
+                <a class="anchor" id="bsdfan"></a>
+                <h2>bsdfan-rs</h2> 
 
                 <a class="anchor" id="mines"></a>
                 <h2>Mines</h2> 
-                <div class="grid six-item-grid">
+                <div class="grid three-item-grid">
                     <div class="first"> <img src="/assets/gif/mines_resize.gif"/> </div>
-                    <div class="second">
-                    <p>
-                    As you can see this version of minesweeper is highly configurable via a hidden menu on the right side.
-                    It lets you create a board that ranges 10x10 to 50x50 in size. 
-                    As well, you can set a number of mines that range 10 to 2500 to be placed in the board.
-                    However, the number of mines needs to be less that the total number of tiles or else you just instantly win.
-                    </p>
-                    </div>
+                    <div class="second"> <img src="/assets/gif/mines_play_1.gif"/> </div>
 
                     <div class="third">
                     <p>
-                    Looking at the video to the right, you can see my keeps track of the amount of time and number of remaining mines in the top bar.
-                    As well, this program handles many different user clicks.
-                    <ol>
-                        <li>A left click will clear a tile. This will either show the number of surrounding mines or will be a mine itself.</li>
-                        <li>A right click will flag a tile. This reduces the count of remaining mines on top.</li>
-                        <li>A middle click on a revealed number tile will clear all tiles around that aren't flagged, if the number of flags matches its number.</li>
-                    </ol>
+                    This is one of my first ever C programming projects that I worked on. 
+                    It was originally a text based program but I made a GTK3 interface for a good ol' final project. 
+                    There's definitely a multitude of issues with such a program and ultimately I would love to completely overhaul this sloppy program. 
+                    But it works for when I just want to play minesweeper every once and a while.
+                    Ultimately, building this program taught me a lot about C development and low level memory management, which I now find incredibly fun to work with.
                     </p>
                     </div>
-                    <div class="fourth"> <img src="/assets/gif/mines_play_1.gif"/> </div>
+                </div>
 
-                    <div class="fifth"> <img src="/assets/gif/mines_play_2.gif"/> </div>
-                    <div class="sixth">
-                    <p>
-                    Now, when the you reveal every non-mine tile the smily face at the top gains shades to signify you win. 
-                    If I were to fix up this program, I would add a pop win / lose message and a dead smile face.
-                    However, that is very unlikely. The program does what is intended - be minesweeper - and I have fun playing it every once and while.
-                    Ultimately, building this program taught me a lot about C development and low level memory management, which I now find incredibly fun to work with. 
-                    </p>
+                <a class="anchor" id="gitstatus"></a>
+                <h2>gitstatus-rs</h2> 
+                
+                <div class="grid two-item-grid">
+                    <div class="first"> <img src="/assets/gif/gitstatus.gif"/> </div>
+                    <div class="second"> 
+                        <p>
+                        This is a simple program that I use to see information about the current git repo that I am working in. 
+                        It is meant to mimick the gitstatus integrated into powerlevel10k.
+                        Gitstatus-rs isn't quite a suitable replacement for the original, but should work on systems supporting Rust.
+                        This means that there is a working option for my OS of choice OpenBSD, which the original does not support.
+                        </p>
                     </div>
-
                 </div>
 
             </article>
