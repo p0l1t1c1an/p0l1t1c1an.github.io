@@ -22,16 +22,22 @@
 	padding: 0;
 	background-color: var(--banner);	 
 	max-width: 1920px;
+    min-width: 640px;
 }
 
 .nav li {
-	display: block;
-	float: left;
+    display: flex;
+	flex-grow: 1;
+	place-content: center;
+	max-width: 12vw;
+    float: left;
     transition: background-color .25s;
 }
 
 .nav li a.navtab {
-	display: block;
+    display: flex;
+	flex-grow: 1;
+	place-content: center;
 	padding: 5px 10px;
 	color: var(--text) !important;
 	text-decoration: none !important;
@@ -55,12 +61,17 @@
 .dropdown-content {
 	position: absolute;
 	background-color: var(--dropdown);
-	min-width: 160px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	place-content: center;
+    width: 12vw;
+/*	min-width: 140px; */
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	visibility: hidden;
     opacity: 0;
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0s, opacity 0.25s linear;
 }
 
 .dropdown-content a {
