@@ -66,7 +66,6 @@
 	flex-grow: 1;
 	place-content: center;
     width: 12vw;
-/*	min-width: 140px; */
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	visibility: hidden;
@@ -89,5 +88,20 @@
 .dropdown:hover .dropdown-content {
 	visibility: visible;
     opacity: 1;
+}
+
+@media (min-width: 1928px) {
+    .nav li {
+        max-width: calc(1928px * .12);
+    }
+    .dropdown-content {
+        width: calc(1928px * .12);
+    }
+}
+
+@media (max-width: 1625px) { 
+	.dropdown-content {
+		font-size: 1vw;
+	}
 }
 
