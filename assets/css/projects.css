@@ -4,3 +4,7 @@
 @import url("/assets/css/grid.css");
 @import url("/assets/css/anchor.css");
 
+h2 {
+  margin-top: 10%;
+}
+
