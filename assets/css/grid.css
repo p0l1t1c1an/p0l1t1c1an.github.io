@@ -2,6 +2,8 @@
 .grid {
     display: grid;
     max-width: 1920px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
     grid-column-gap: 10%;
     grid-row-gap: 5%;
 }
@@ -84,39 +86,14 @@
    grid-area: sixth;
 }
 
+
 @media (max-width: 1440px) {
    .grid p {
-      font-size: 110%;
+      font-size: 1.5vw;
    }
    .grid ol {
-      font-size: 100%;
+      font-size: 1.2vw;
    }
 }
 
-@media (max-width: 1200px) {
-   .grid p {
-      font-size: 100%;
-   }
-   .grid ol {
-      font-size: 95%;
-   }
-}
-
-@media (max-width: 960px) {
-   .grid p {
-      font-size: 95%;
-   }
-   .grid ol {
-      font-size: 90%;
-   }
-}
-
-@media (max-width: 650px) {
-   .grid p {
-      font-size: 85%;
-   }
-   .grid ol {
-      font-size: 80%;
-   }
-}
 
