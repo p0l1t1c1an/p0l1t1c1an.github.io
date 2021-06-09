@@ -69,13 +69,53 @@
                 </p>
                 
                 <a class="anchor" id="server"></a>
-                <h2>Homeserver</h2> 
+                <h2>Homeserver</h2>
+                <div class="grid three-item-grid">
+                    <div class="first"> <img src="/assets/images/server_1.jpg" alt="server pic 1"/> </div>
+                    <div class="second"> <img src="/assets/images/server_2.jpg" alt="server pic 2"/> </div>
+                    <div class="third"> 
+                        <p>
+                        I am currently working on a simple homeserver that I have set up running FreeBSD on a simple desktop hardware.
+                        It provides numerous services such as NFS, DNSCrypt, and git. Some of which are running in jails. As well, a IPSec tunnel is used to connect the internal (virtual) network.
+                        This allows me to stream music and other media through the VPN. This works well enough for me while only providing the few services. 
+                        Right now, I think of this system is hanging on by a thread. It could be easily (D)DOSed and would prefer to purely have services running on VMs or in containers, which isn't possible for NFS or IPSec.
+                        </p>
+
+                        <p>
+                        My current plan of action is to document what I have gotten done so far and will try a more scalable solution than a barebones FreeBSD system. 
+                        I am looking into either Joyent's illumos system — <b>SmartOS</b> — or <b>Proxmox</b>. Both are type 2 hypervisors and can intermingle both containers and VMs.
+                        What is interesting about SmartOS is that it can actual create Linux containers, but also provides me familiar VM software like bhyve and ZFS and powerful solaris tools. 
+                        Altogether, it seems like a well designed system. In comparison, Proxmox is a Linux-based system, which I tend to think of as less designed and more put together. 
+                        I'm going to first try SmartOS and find out what other Joyent software is needed to get my desired usable. 
+                        Which I would put as simple monitoring of running machines and services and quick creation of snapshots and VMs/containers.
+                        Otherwise, I will use Proxmox which I am pretty sure will work.
+                        Though, in the long run, I will end up using this machine as a home workstation and set up a small homelab with 2-3 rack servers, a NAS, and a nice router. 
+                        </p>
+                    </div>
+                </div>
 
                 <a class="anchor" id="septem"></a>
                 <h2>Septem</h2> 
+                <p>
+                One feature, I actually like with my smartphone is that it will give me a week break down of screen time and percentage wise how much I was on each app.
+                This program is simply that idea but brought to Xorg WM users. My end goal is to create a system that records the current application you are focused on.
+                It will then generate end of the week reports "percentage makeups" of applications you focused. 
+                I also want the system to be highly configurable for the times monitored each day of the week to certain days of the year to not monitor like holidays. 
+                On top of all that, Septem will also keep track of which applications are productive or not based on a list of what you give and will alert you once you're on an unproductive app for too long. 
+                Finally, once most major features are implemented, I will probably add a simple gui to render pie charts, show trends, and go through the data stored by the week of the year. (1-52)
+                </p>
                 
                 <a class="anchor" id="bsdfan"></a>
                 <h2>bsdfan-rs</h2> 
+                <p>
+                This is a simple program I made to control my fan of my Thinkpad T480, which I found FreeBSD had operate at two speeds: off or barely on.
+                It utilizes FreeBSD's acpi_ibm driver, which can be used set the fan's level or speed.
+                At first, I was creating a Rust program from scratch but stumbled upon bsdfan in FreeBSD's ports list.
+                So I decided to do what all great inventors do and steal ideas. I essentially ended up making a Rust port of bsdfan, which I now have archived as v0.1.0 of bsdfan-rs.
+                I reworte the program to be a Rust program and not a C program in Rust. 
+                It now uses a toml config file and the sysctl-rs library to control the fan rather than manually parsing the config file and linking to FreeBSD's sysctl functions.
+                Overall, it can now more easily add features and config options.
+                </p>
 
                 <a class="anchor" id="mines"></a>
                 <h2>Mines</h2> 
