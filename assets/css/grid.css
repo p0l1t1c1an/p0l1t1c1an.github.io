@@ -45,14 +45,6 @@
    height: auto;
 }
 
-.grid p {
-   font-size: 125%;
-}
-
-.grid ol {
-   font-size: 110%;
-}
-
 .grid div {
     display: flex;
     flex-direction: column;
@@ -84,15 +76,4 @@
 .grid .sixth {
    grid-area: sixth;
 }
-
-
-@media (max-width: 1440px) {
-   .grid p {
-      font-size: 1.5vw;
-   }
-   .grid ol {
-      font-size: 1.2vw;
-   }
-}
-
 
