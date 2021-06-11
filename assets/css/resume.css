@@ -3,3 +3,29 @@
 @import url("/assets/css/nav.css");
 @import url("/assets/css/anchor.css");
 
+.resume h4 {
+  margin: 1% 0;
+}
+
+.resume h3 {
+  font-size: 130%;
+  margin: 1.5% 0 1%;
+}
+
+.resume h2 {
+  font-size: 180%;
+  margin: 2.5% 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.column {
+  margin-bottom: 0.4%;
+}
+
+.os {
+  columns: 2;
+}
