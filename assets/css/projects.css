@@ -10,7 +10,7 @@ h2 {
 
 .link-icon {
   content: url("/assets/images/link_icon.svg");
-  margin-left: .2em; 
-  height: .6em;
-  width: .6em;
+  margin-left: .25em; 
+  height: .75em;
+  width: .75em;
 }
