@@ -8,3 +8,6 @@ h2 {
   margin-top: 10%;
 }
 
+.link-icon::before {
+    content: url("/assets/images/link_icon.svg"); 
+}

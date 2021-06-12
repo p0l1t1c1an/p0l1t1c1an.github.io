@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg8" width="512" height="512" version="1.1" viewBox="0 0 135.46666 135.46667" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs id="defs2">
+  <marker id="marker1204" overflow="visible" orient="auto">
+   <path id="path1202" transform="scale(.8) translate(12.5)" d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill="#2a6dd3" fill-rule="evenodd" stroke="#2a6dd3" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata5">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" fill="#2a6dd3" stroke-width="0">
+  <path id="rect842" d="m3.175 22.225v8.9778h4e-3v93.174h8.9698v-93.174l60.082-2.7e-4 8.9958-8.9775zm102.15 40.746v61.41h-102.14v8.9609h102.14v8e-3h8.9778v-79.375z" marker-start="url(#marker1204)"/>
+  <path id="rect1284" d="m125.08 3.175-0.01 0.01h-43.821v10.205h33.616l-61.944 61.944 7.2156 7.2161 61.932-61.932v33.591h10.205v-43.796l0.0224-0.02243-0.0224-0.02242v-7.1832h-7.1838z" opacity=".99" style="paint-order:markers fill stroke"/>
+ </g>
+</svg>
