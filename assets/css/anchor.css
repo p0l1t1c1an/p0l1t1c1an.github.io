@@ -6,7 +6,7 @@
 a.anchor {
     display: block;
     position: relative;
-    top: calc(-1.7em - 10px);
+    top: calc(-2em - 10px);
     visibility: hidden;
 }
 
