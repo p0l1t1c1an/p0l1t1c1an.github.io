@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cyber Rants</title>
+	<link rel="canonical" href="https://p0l1t1c1an.github.io/about/cyber">
+	<link rel="stylesheet" href="/assets/css/rants.css">
+</head>
+
+<body>
+    <div id="container"> 
+        <nav class = "nav">
+        <ul>
+        <li class="home">
+            <a class="navtab" href="/">Home</a>
+        </li>
+
+        <li class="dropdown active">
+           <a class="navtab" href="/about/">About Me</a>
+           <div class="dropdown-content">
+               <a href="/about/#why">Why Cybersecurity</a>
+               <a href="/about/#interests">Professional Interests</a>
+               <a href="/about/#politics">Political-ish Opinions</a>
+               <a href="/about/#other">Other Interests</a>
+           </div>
+        </li>
+      
+        <li class="dropdown">
+           <a class="navtab" href="/resume/">Resume</a>
+           <div class="dropdown-content">
+               <a href="/resume/#education">Education</a>
+               <a href="/resume/#experience">Experience</a>
+               <a href="/resume/#skills">Skills</a>
+               <a href="/assets/Resume_Jacob_Boicken.pdf">Download PDF</a>
+           </div>
+        </li>
+
+        <li class="dropdown">
+           <a class="navtab" href="/projects/">Projects</a>
+           <div class="dropdown-content">
+              <a href="/projects/#server">Homeserver</a>
+              <a href="/projects/#septem">Septem</a>
+              <a href="/projects/#bsdfan">bsdfan-rs</a>
+              <a href="/projects/#mines">Mines</a>
+              <a href="/projects/#gitstatus">gitstatus-rs</a>
+           </div>
+        </li>        
+       
+        <li class="dropdown">
+           <a class="navtab">Contacts</a>
+           <div class="dropdown-content">
+              <a href="mailto:boicken19@gmail.com">boicken19@gmail.com</a>
+              <a href="https://github.com/p0l1t1c1an">Github</a>
+              <a href="https://www.linkedin.com/in/jacob-boicken-0201571b7">Linkedin</a>
+              <a href="https://discordapp.com/users/745105200523771924">Discord</a>
+           </div>
+        </li>
+        </ul>        
+        </nav>
+ 
+        <main>
+            <article> 
+                <p id="howdy">
+                Welcome to my rants about cyber security, computers, and network.
+                This is really just some questions, ponderings, and ideas I have. 
+                My guess is that I don't know enough about the questions I have and would love to learn how wrong I am.
+                </p>
+                
+                <a class="anchor" id="open-info"></a>
+                <h3>Consumer's should have access to security information, privacy information, source code, and hardware specs for tech products or online services</h3> 
+                <p> 
+                I think this could simply be thought as the nutritional info for the tech industry. 
+                Basically, just something "printed on the box" and easily accessible for most people but I would like an in-depth version available.
+                This would have to be maintained by multiple large regulatory bodies, which review products like they do with food.
+                For websites, this could be some form of requirement for something like PCI compliance.
+                Then, a browser could notify a user whether the site is trusted/certified for X, Y, and Z, then it gives a ranking instead of simple a lock.
+                So if you want be able take online transactions, you have to be open with consumers and certified "trusted" by X body. 
+                As well, I would like features should only be opt-in like sending crash reports and such.
+                </p>
+                
+                <a class="anchor" id="ethics"></a>
+                <h3>Cyber/IT professional ethics board and centralized certification</h3> 
+                <p>
+                I like to think of this as something like state and federal bar associations but for IT and cybersecurity professionals.
+                Ultimately, I think we need such a mandatory association that can preform ethical reviews and preventing people working in industry.
+                Then, we also could have it provide a system of training and certification.
+                Really I think this is needed for many major "high-ticket" occupations as a way to ensure trust for both empolyers and customers.
+                </p>
+
+                <a class="anchor" id="simple"></a>
+                <h3>Why are end user systems overly simple</h3> 
+                <p>
+                It seems like everything you by is like "here is an app to control your device" and then its just a remote on/off switch.
+                For peaks sake, my router had an almost useless app on it! It could just simply serve https on the LAN and be universally available. 
+                My main gripe is just that these devices want people to be stupid about what it is doing under the hood.
+                I have also used configs that have "more info" that simple states "enable/disable X" instead of describing X to the user.  
+                Systems need to be highly configurable but also be in depth about what X does and any warnings with changing the default.        
+                Ultimately, users need to be able to learn what a device/system does and make it bend to their every whim. 
+                The device serves the user not the other way around!
+                </p>
+
+                <a class="anchor" id="wpa-asym"></a>
+                <h3>Why do we only use password based authentication for 802.1X</h3> 
+                <p>
+                First off, I know very little about this and if anything I am pondering makes no sense I would love to know. 
+                The only two things I wouldn't care to hear is slowing speed or people couldn't understand. 
+                Because we can sacrifice speed to an extent and make people learn.
+                </p>
+                
+                <p>
+                Is there not a way in which we could use asymmetric key pairs to authenticate STAs (Station/End Device) to an AP (Access Point/Router).
+                I just kind of think an AP could broadcast its public key and STAs can send an encrypted message using that.
+                If the STAs public key is in the "trusted keys" of the AP, then it established a connection between the device.
+                An open AP would basically just let anyone authenticate ie all keys are trusted key.
+                You could also enforce both a password and keys, just a password, or only keys.
+                </p>     
+             
+                <a class="anchor" id="memory"></a>
+                <h3>What happens to stack and heap memory when deallocated/freed</h3>
+                <p>
+                My question here is really is the memory reset like zeroed/random after use or is it just left as is. 
+                I kind of feel like it is a bit of a vulnerability if it isn't reset in some way. 
+                Like when an overflow happens it could allow reading that memory if it hasn't been used and overwritten, so just letting it sit seems like a bad idea.
+                This is probably based on the compiler, language, OS handling s tack and heap, and probably other things I can't think of.
+                I literally wasted a couple hours trying to find out what happens, but the closest I found out is initialization, which I already know.
+                As well, when you allocate memory, if it is ensured that it is random/zero, then you don't have to zero it then.
+                </p>
+
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>
