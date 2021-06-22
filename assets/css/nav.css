@@ -105,3 +105,18 @@
 	}
 }
 
+@media (max-width: 1000px) { 
+	.dropdown-content {
+		font-size: 1.25vw;
+	}
+}
+
+@media (orientation: portrait) {
+  .nav li {
+        max-width: 18%;
+    }
+    .dropdown-content {
+        width: 18%;
+    }
+}
+

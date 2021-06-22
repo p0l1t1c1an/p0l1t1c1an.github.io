@@ -71,11 +71,19 @@ body #howdy {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1000px) {
    body {
-      font-size: 1.22vw;
+      font-size: 1em;
    }
-    body #howdy {
-        font-size: 1.4vw;
-    }
+   body #howdy {
+      font-size: 1.1em;
+   }
 }
+
+
+@media (orientation: portrait) {
+  body article {
+    max-width: 90%;
+  }
+}
+
