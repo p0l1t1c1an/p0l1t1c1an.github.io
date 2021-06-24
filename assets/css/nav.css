@@ -71,6 +71,7 @@
 	visibility: hidden;
     opacity: 0;
 	transition: visibility 0s, opacity 0.25s linear;
+    font-size: .9em;
 }
 
 .dropdown-content a {
@@ -90,23 +91,16 @@
     opacity: 1;
 }
 
-@media (max-width: 1625px) { 
-	.dropdown-content {
-		font-size: 1vw;
-	}
-}
-
-
 @media (max-width: 1000px) { 
 	.dropdown-content {
-		font-size: 1.25vw;
+		font-size: 1.5vw;
 	}
 	.nav li {
-      max-width: 18%;
-  }
-  .dropdown-content {
-      width: 18%;
-  }
+        max-width: 18%;
+    }
+    .dropdown-content {
+        width: 18%;
+    }
 }
 
 
