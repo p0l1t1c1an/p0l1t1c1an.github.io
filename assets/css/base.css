@@ -51,7 +51,7 @@ body article {
     display: block;
     padding: 4px;
     margin: auto;
-    max-width: 60%;
+    max-width: 900px;
     font-size: 100%;
 }
 
@@ -78,12 +78,9 @@ body #howdy {
    body #howdy {
       font-size: 1.1em;
    }
+   body article {
+      max-width: 90%;
+   }
 }
 
-
-@media (orientation: portrait) {
-  body article {
-    max-width: 90%;
-  }
-}
 
