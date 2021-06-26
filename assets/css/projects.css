@@ -17,14 +17,14 @@ h2 {
     height: 1em;
 }
 
-.link-icon :hover {
+.link-icon:hover {
     content: url("/assets/images/github_icon_blue.svg");
 }
 
 
 @media (prefers-color-scheme: light) {
-  .link-icon {
-    content: url("/assets/images/github_icon.svg");
-  }
+    .link-icon {
+        content: url("/assets/images/github_icon.svg");
+    }
 }
 
