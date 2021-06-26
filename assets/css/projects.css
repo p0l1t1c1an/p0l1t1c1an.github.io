@@ -5,12 +5,26 @@
 @import url("/assets/css/anchor.css");
 
 h2 {
-  margin-top: 10%;
+    margin-top: 10%;
 }
 
 .link-icon {
-  content: url("/assets/images/link_icon.svg");
-  margin-left: .25em; 
-  height: .75em;
-  width: .75em;
+    display: inline;
+    vertical-align: bottom;
+    content: url("/assets/images/github_icon_light.svg");
+    margin-left: .30em; 
+    width: 1em;
+    height: 1em;
 }
+
+.link-icon :hover {
+    content: url("/assets/images/github_icon_blue.svg");
+}
+
+
+@media (prefers-color-scheme: light) {
+  .link-icon {
+    content: url("/assets/images/github_icon.svg");
+  }
+}
+
