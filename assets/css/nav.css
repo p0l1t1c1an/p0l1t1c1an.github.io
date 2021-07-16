@@ -22,7 +22,7 @@
 	padding: 0;
 	background-color: var(--banner);	 
 	max-width: 1920px;
-    min-width: 640px;
+    min-width: 650px;
 }
 
 .nav li {

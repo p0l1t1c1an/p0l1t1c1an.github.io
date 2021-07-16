@@ -122,9 +122,83 @@
                 My question here is really is the memory reset like zeroed/random after use or is it just left as is. 
                 I kind of feel like it is a bit of a vulnerability if it isn't reset in some way. 
                 Like when an overflow happens it could allow reading that memory if it hasn't been used and overwritten, so just letting it sit seems like a bad idea.
-                This is probably based on the compiler, language, OS handling s tack and heap, and probably other things I can't think of.
+                This is probably based on the compiler, language, OS handling stack and heap, and probably other things I can't think of.
                 I literally wasted a couple hours trying to find out what happens, but the closest I found out is initialization, which I already know.
                 As well, when you allocate memory, if it is ensured that it is random/zero, then you don't have to zero it then.
+                </p>
+
+                <a class="anchor" id="intel"></a>
+                <h3>Intel ME and AMD's equivalent</h3> 
+                <p>
+                I hate that there is a seperate chip on my intel cpu running Minix OS that can just do whatever before my actual operating system.
+                It is seems like a major security threat to just about any device. All that needs to be done is allow an end user to disable it <b>COMPLETELY.</b>
+                This system is virtually useless on a desktop/laptop system but may be needed for servers as it seems to provide PXE and few other "applications" in AMT.
+                AMD's similar system that I forget the name of at least does allow disabling it. 
+                Honestly, what I would love for these subsystems to become open source firmware so that people can actually test and secure this codebase.
+                These system operate at fundamentally ring -3 and are terrifying beasts hiding on my computer. 
+                No one knows what they actually are expect a few employees.  
+                </p>
+
+                <a class="anchor" id="supply"></a>
+                <h3>Supply Chain Security</h3> 
+                <p>
+                Recently, I have thinking of getting a yubikey and setting up additional multi-factor authentication for some applications like github.
+                But I started thinking how can I trust buying one of them. How can I ensure that I actually get a yubikey and not swapped out with a tampered one?
+                What could such a thing do: record biometrics and passwords, sync and send information about online accounts, and much more with usb access to my computer.
+                So this little panic got me think about supply chain security and am quite interested in how government bodies and corporations ensure that what order is what they get.
+                From computer hardware to something simple like furniture, how is proven to not be tampered with? Like a on board chip that can record and monitor activity of the OS.
+                (*guestures above to Intel ME*) Or potentially something like a listening bug being implanted inside a new desk or chair? 
+                It's just kind of scary to think about and would love to know how these kinds of issues are dealt with. 
+                I would assume their must be some kinds of ways to prevent this, especially since computer parts are widely built and assembled in China.
+                </p>
+
+                <a class="anchor" id="license"></a>
+                <h3>To Copyleft, or to not Copyleft, that is the question</h3> 
+                <p>
+                I don't really care about the licensing of software. I mearly care that what I use is free, and it upsets me that I have to use propritory firmware.
+                However, both copyleft and permissive licenses have their ups and downs. 
+                Copyleft enforces that future developers that want to include the code into a larger project must have it copyleft licensed. 
+                Permissive licenses don't enforce such a thing allowing people to include the code into any project. 
+                This means that copyleft limits choice for a future developer and permissive fails to ensure freedom of the code. 
+                My opinion is that a library should be permissive and end-user software is copyleft. Though, I tend to just use BSD license since I don't care enough. 
+                Either way they are free thus able to be viewed and modified by a larger community.
+                </p>
+
+                <a class="anchor" id="interconnectivity"></a>
+                <h3>"Smart" Actually Means Stupid</h3> 
+                <p>
+                Unsurprisingly, I don't use any "smart" home devices and actively despise them.
+                They really just seem like unneeded risks with zero benefits. My main concern with them is punching holes through my router.
+                There are many devices that connect through plug n' play just so a phone app can connect to it. 
+                These become easy ways onto my home network, so I can't trust them. 
+                That's why these devices <b>must</b> be isolated on a different VLAN if you're gonna use them. But then so can entire world. 
+                There's honestly a ton of issues with these kinds of devices like QA and security testing being costly and difficult as these are cyber-physical devices. 
+                You have to test software, hardware, network capabilites, and it physical interaction that end users will experience. It's very easy for things to slip by especially with tight time constraints.
+                Plus, these devices seem like most of the time they are not designed. Rather a manager came up with an idea and gave 2 weeks to get back a product. 
+                No designing how the system should function or its features, just throw random tech together and you get a "smart" baby camera. 
+                Now ship it! What? Testing? Unnecessary! Now, everyone can watch your child sleep.
+                </p>
+
+                <p>
+                My biggest fear though may be once these devices make more money being "smart" than not. This is the case for most of modern cars, which basically house a general-purpose desktop inside them. 
+                I also like to think of future washing machines connected to the internet that forces me to scan my clothes and only allows me to throw in certain clothes by brand. 
+                To some, this sounds kind of absurd but this is basically what Kuerig coffee makers do but with laundry.
+                This could really just start existing tomorrow. But that is the now "smart", the future limits of "smart" knows no bounds. 
+                "Smart" clothes, cars, homes, cities ... and worst of all "smart" people. The fusing of flesh, blood, and the internet. 
+                That is happening a lot soon than people seem to think.
+                </p>
+
+                <a class="anchor" id="backdoors"></a>
+                <h3>Backdoors: Why the Risk?</h3> 
+                <p>
+                One of the things I fail to understand is the why governments seem to persistently decrease security. 
+                They want corporations to have backdoors in their encryption, ban E2EE, or pocket zero days. 
+                For a democratic nation like the US, this seems like more of a risk to their nations overall well being rather than the preventative measures will have on crime.
+                Purposely creating flawed systems will be breached eventually and cost millions, billions of dollars. 
+                As well, smart criminals won't be affected by such backdoors and will have to be caught via (cyber) forensics. 
+                The zero days are more interesting. The militaries of nations that find security vulnerabilities can either report such flaws or use it against an adversary. 
+                I just don't think it is useful to pocket away vulnerabilities allow for other to discover and use such a vuln. 
+                It should be used and reported. Just no waiting to do something with them. That is a preventible disaster.
                 </p>
 
             </article>

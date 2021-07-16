@@ -6,7 +6,7 @@
     margin: 0 auto;
     text-align: left;
     max-width: 1920px;
-    min-width: 640px;
+    min-width: 650px;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 
     background-color: var(--background);
 	color: var(--text);
-	font-size: 1.1em;
     line-height: 155%;
     margin: 0px auto;
 	padding: 0;
@@ -59,7 +58,7 @@ body #howdy {
     color: var(--red);
     font-weight: bold;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-bottom: 4%;
 	margin-top: 2%;
 }
@@ -72,12 +71,6 @@ body #howdy {
 }
 
 @media (max-width: 1000px) {
-   body {
-      font-size: 1em;
-   }
-   body #howdy {
-      font-size: 1.1em;
-   }
    body article {
       max-width: 90%;
    }
