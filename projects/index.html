@@ -11,151 +11,104 @@
 <body>
     <div id="container">
 
-        <nav class = "nav">
-        <ul>
-        <li class="home">
-            <a class="navtab" href="/">Home</a>
-        </li>
+        <object name="nav" type="text/html" data="/assets/html/nav.html"></object>
 
-        <li class="dropdown">
-           <a class="navtab" href="/about/">About Me</a>
-           <div class="dropdown-content">
-               <a href="/about/#why">Why Cybersecurity</a>
-               <a href="/about/#interests">Professional Interests</a>
-               <a href="/about/#politics">Political-ish Opinions</a>
-               <a href="/about/#other">Other Interests</a>
-           </div>
-        </li>
-
-        <li class="dropdown">
-           <a class="navtab" href="/resume/">Resume</a>
-           <div class="dropdown-content">
-               <a href="/resume/#education">Education</a>
-               <a href="/resume/#experience">Experience</a>
-               <a href="/resume/#skills">Skills</a>
-               <a href="/assets/Resume_Jacob_Boicken.pdf">Download PDF</a>
-           </div>
-        </li>
-      
-        <li class="dropdown active">
-           <a class="navtab" href="/projects/">Projects</a>
-           <div class="dropdown-content">
-              <a href="/projects/#server">Homeserver</a>
-              <a href="/projects/#septem">Septem</a>
-              <a href="/projects/#bsdfan">bsdfan-rs</a>
-              <a href="/projects/#mines">Mines</a>
-              <a href="/projects/#gitstatus">gitstatus-rs</a>
-           </div>
-        </li>
-        
-        <li class="dropdown">
-           <a class="navtab">Contacts</a>
-           <div class="dropdown-content">
-              <a href="mailto:boicken19@gmail.com">boicken19@gmail.com</a>
-              <a href="https://github.com/p0l1t1c1an">Github</a>
-              <a href="https://www.linkedin.com/in/jacob-boicken-0201571b7">Linkedin</a>
-              <a href="https://discordapp.com/users/745105200523771924">Discord</a>
-           </div>        
-        </li>
-        </ul>        
-        </nav>
- 
         <main>
-            <article>
-                <p id="howdy">
-                Below you can find information about some of my homeserver and programming projects.
-                I have information about all of these on my <a href="https://github.com/p0l1t1c1an">github page</a>.
-                These range from simple one file programs to intricate multi-threaded asynchronous programs. 
-                </p>
-                
-                <a class="anchor" id="server"></a>
+            <article> 
                 <h2>Homeserver
                     <a href="https://github.com/p0l1t1c1an/HomeServer" class="link-icon"></a>
                 </h2>
-                <div class="grid three-item-grid">
-                    <div class="first"> <img src="/assets/images/server_1.jpg" alt="server pic 1"/> </div>
-                    <div class="second"> <img src="/assets/images/server_2.jpg" alt="server pic 2"/> </div>
-                    <div class="third"> 
-                        <p>
-                        I am currently working on a simple homeserver that I have set up running FreeBSD on a simple desktop hardware.
-                        It provides numerous services such as NFS, DNSCrypt, and git. Some of which are running in jails. As well, a IPSec tunnel is used to connect the internal (virtual) network.
-                        This allows me to stream music and other media through the VPN. This works well enough for me while only providing the few services. 
-                        </p>
+                <ul>Services and Features Implemented
+                    <li>IPSec VPN for devices on LAN to internal services</li>
+                    <li>TOR Relay accessable to LAN</li>
+                    <li>NFS and Git over VPN</li>
+                    <li>Services run in FreeBSD jails (containers)</li>
+                </ul>
 
-                        <p>
-                        My current plan of action is to document what I have gotten done so far and will try a more scalable solution than a barebones FreeBSD system. 
-                        I am looking into Joyent's illumos system, SmartOS. It's a hypervisor that can intermingle both containers and VMs.
-                        What is interesting about SmartOS is that it can actual create Linux containers, but also provides me familiar VM software like bhyve and ZFS and other powerful solaris tools. 
-                        Altogether, it seems like a well designed system. In comparison, Proxmox is a Linux-based system, which I tend to think of as less designed and more put together. 
-                        I'm going to first try SmartOS and find out what other Joyent software is needed to get my desired usability. 
-                        Which I would put as simple monitoring of running machines and services and quick creation of snapshots and VMs/containers.
-                        Though, in the long run, I will end up using this machine as a home workstation and set up a small homelab with a few rack servers booting SmartOS over PXE, TrueNAS, and an OPNSense router. 
-                        </p>
-                    </div>
-                </div>
+                <ul>Current/Future Ideas to Implement (when I get time)
+                    <li>Upgrade hardware to small rack server with: 
+                        <li>OPNsense router that forwards outward traffic through OpenVPN</li>
+                        <li>Managed Switch</li>
+                        <li>TrueNAS Server</li>
+                        <li>SmartOS/Proxmox servers for virtualization</li>
+                    </li>
+                    <li>IDS/IPS (Snort or Zeek)</li>
+                    <li>Public Webserver using NGINX</li>
+                    <li>Publicly accessible IPSec VPN</li>
+                    <li>Public DNSCrypt Server</li>
+                    <li>Private System Backup System</li>
+                    <li>Folding @ Home or similar distributed project</li>
+                </ul>
 
-                <a class="anchor" id="septem"></a>
                 <h2>Septem
                     <a href="https://github.com/p0l1t1c1an/Septem" class="link-icon"></a>
                 </h2> 
-                <p>
-                One feature, I actually like with my smartphone is that it will give me a week break down of screen time and percentage wise how much I was on each app.
-                This program is simply that idea but brought to Xorg WM users. My end goal is to create a system that records the current application you are focused on.
-                It will then generate end of the week reports "percentage makeups" of applications you focused. 
-                I also want the system to be highly configurable for the times monitored each day of the week to certain days of the year to not monitor like holidays. 
-                On top of all that, Septem will also keep track of which applications are productive or not based on a list of what you give and will alert you once you're on an unproductive app for too long. 
-                Finally, once most major features are implemented, I will probably add a simple gui to render pie charts, show trends, and go through the data stored by the week of the year. (1-52)
-                </p>
                 
-                <a class="anchor" id="bsdfan"></a>
+                <ul>Project Description
+                    <li>Mimicks Apples' Screen Time system that tracks what apps you use</li>
+                    <li>Alert subsystem to inform user of being unproductive</li>
+                    <li>Simple weekly config system for when alert system is active</li>
+                    <li>Gtk-applet to control system and show statistics</li>
+                </ul> 
+                
+                <ul>Features Implemented So Far
+                    <li>Multi-threaded asynchronous system</li>
+                    <li>Tracks users' current window by PID</li>
+                    <li>Records time on window and if application is productive or not</li>
+                </ul>               
+
+                <h2>Chirrup
+                    <a href="https://github.com/p0l1t1c1an/Chirrup" class="link-icon"></a>
+                </h2>
+
+                <ul>Project Description
+                    <li>Simple Twitter-esque Android application</li>
+                    <li>Backend user and post management of Springboot web server</li>
+                    <li>I worked on the Springboot + MySQL backend team</li>
+                    <li>Used Gitlab for collaborative feature-based development</li>
+                </ul>
+
+                <ul>Features I implemented
+                    <li>User typing and Parental Controls</li>
+                    <li>Searching Users by Name and other options</li>
+                    <li>Login system</li>
+                    <li>Reporting of Users and Posts</li>
+                    <li>Admin view to handle reports</li>
+                </ul>
+
                 <h2>bsdfan-rs
                     <a href="https://github.com/p0l1t1c1an/bsdfan-rs" class="link-icon"></a>
                 </h2>
-                <p>
-                This is a simple program I made to control my fan of my Thinkpad T480, which I found FreeBSD had operate at two speeds: off or barely on.
-                It utilizes FreeBSD's acpi_ibm driver, which can be used set the fan's level or speed.
-                At first, I was creating a Rust program from scratch but stumbled upon bsdfan in FreeBSD's ports list.
-                So I decided to do what all great inventors do and steal ideas. I essentially ended up making a Rust port of bsdfan, which I now have archived as v0.1.0 of bsdfan-rs.
-                I reworte the program to be a Rust program and not a C program in Rust. 
-                It now uses a toml config file and the sysctl-rs library to control the fan rather than manually parsing the config file and linking to FreeBSD's sysctl functions.
-                Overall, it can now more easily add features and config options.
-                </p>
+                <ul>Project Description
+                    <li>Fan controller for FreeBSD Thinkpads</li>
+                    <li>Uses FreeBSD's sysctls to control fan speed based off cpu temperature</li>
+                    <li>Simple config system to set max and min temps for each fan level</li>
+                </ul>               
 
-                <a class="anchor" id="mines"></a>
+                <ul>Features Implemented
+                    <li>Config sanity checking to ensure levels don't overlap/invalid</li>
+                    <li>Controller that raises the fan level when temp reaches max of current level</li>
+                    <li>Lowers the fan level when temp reaches min of current level</li>
+                    <li>FreeBSD start up script to start at boot</li>
+                </ul>               
+
                 <h2>Mines
                     <a href="https://github.com/p0l1t1c1an/Mines" class="link-icon"></a>
-                </h2> 
-                <div class="grid three-item-grid">
-                    <div class="first"> <img src="/assets/gif/mines_resize.gif"/> </div>
-                    <div class="second"> <img src="/assets/gif/mines_play_1.gif"/> </div>
-
-                    <div class="third">
-                    <p>
-                    This is one of my first ever C programming projects that I worked on. 
-                    It was originally a text based program but I made a GTK3 interface for a good ol' final project. 
-                    There's definitely a multitude of issues with such a program and I would love to completely overhaul this sloppy program. 
-                    But it works for when I just want to play minesweeper every once and a while.
-                    Ultimately, building this program taught me a lot about C development and low level memory management, which I now find incredibly fun to work with.
-                    </p>
-                    </div>
-                </div>
-
-                <a class="anchor" id="gitstatus"></a>
-                <h2>gitstatus-rs
-                    <a href="https://github.com/p0l1t1c1an/gitstatus-rs" class="link-icon"></a>
                 </h2>
-                
-                <div class="grid two-item-grid">
-                    <div class="first"> <img src="/assets/gif/gitstatus.gif"/> </div>
-                    <div class="second"> 
-                        <p>
-                        This is a simple program that I use to see information about the current git repo that I am working in. 
-                        It is meant to mimick the gitstatus integrated into powerlevel10k.
-                        Gitstatus-rs isn't quite a suitable replacement for the original, but should work on systems supporting Rust.
-                        This means that there is a working option for my OS of choice OpenBSD, which the original does not support.
-                        </p>
-                    </div>
-                </div>
+                 <ul>Project Description
+                    <li>Minesweeper clone written in C using GTK 3</li>
+                    <li>One of my first ever major C programs</li>
+                    <li>Custom draw svg images for mines, tiles and face button</li>
+                </ul>
+
+                <ul>Features Implemented
+                    <li>Left click that recursively clears mines when a tile has no mines next to it</li>
+                    <li>Right click that flags a tile as a mine</li>
+                    <li>Middle click that clear remaining unflagged tiles around revealed/number tile</li>
+                    <li>Reset button to restart the game</li>
+                    <li>Menu option that selects the board size and number of mines</li>
+                    <li>Timer and mines remain counters</li>
+                </ul>
 
             </article>
         </main>
