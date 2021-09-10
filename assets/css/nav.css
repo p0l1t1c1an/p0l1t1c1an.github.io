@@ -47,7 +47,7 @@
 	text-align: center;
 }
 
-.nav li.active {
+.nav li a.active {
 	background-color: var(--blue);
 }
 
