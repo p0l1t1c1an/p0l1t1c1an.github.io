@@ -63,13 +63,6 @@ body #howdy {
 	margin-top: 2%;
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #fff !important;
-        color: var(--background) !important;
-    }
-}
-
 @media (max-width: 1000px) {
    body article {
       max-width: 90%;

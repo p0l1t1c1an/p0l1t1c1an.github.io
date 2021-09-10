@@ -1,12 +1,5 @@
 
 @import url("/assets/css/base.css");
-@import url("/assets/css/nav.css");
-@import url("/assets/css/grid.css");
-@import url("/assets/css/anchor.css");
-
-h2 {
-    margin-top: 10%;
-}
 
 .link-icon {
     display: inline;
@@ -19,12 +12,5 @@ h2 {
 
 .link-icon:hover {
     content: url("/assets/images/github_icon_blue.svg");
-}
-
-
-@media (prefers-color-scheme: light) {
-    .link-icon {
-        content: url("/assets/images/github_icon.svg");
-    }
 }
 
