@@ -54,15 +54,6 @@ body article {
     font-size: 100%;
 }
 
-body #howdy {
-    color: var(--red);
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 4%;
-	margin-top: 2%;
-}
-
 @media (max-width: 1000px) {
    body article {
       max-width: 90%;
