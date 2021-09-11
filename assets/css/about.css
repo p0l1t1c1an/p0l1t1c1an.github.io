@@ -19,11 +19,11 @@ main ul li.title {
 .column {
     margin-top: 1%;
     margin-bottom: 1%;
+    padding: 6px;
 }
 
 .link {
     max-height: 24px;
     max-width: 24px;
-    padding: 6px;
 }
 
