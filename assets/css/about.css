@@ -13,21 +13,20 @@ main ul li.title {
 
 .row {
     max-width: 500px;
-    margin: 5% auto;
+    margin: 7.5% auto;
+    align-content: center;
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .column {
-    padding: 24px;
-}
-
-.column:hover {
-    filter: brightness(150%);    
+    padding: 36px;
 }
 
 .link {
     max-height: 24px;
     max-width: 24px;
 }
+
 
