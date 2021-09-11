@@ -12,11 +12,18 @@ main ul li.title {
 }
 
 .row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .column {
-  margin-bottom: 0.4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.link {
+    max-height: 24px;
+    max-width: 24px;
+    padding: 6px;
 }
 
