@@ -54,6 +54,10 @@ body article {
     font-size: 100%;
 }
 
+footer {
+    --background: #373e47;
+}
+
 @media (max-width: 1000px) {
    body article {
       max-width: 90%;
