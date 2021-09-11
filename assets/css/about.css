@@ -12,14 +12,18 @@ main ul li.title {
 }
 
 .row {
+    max-width: 500px;
+    margin: 5% auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .column {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 6px;
+    padding: 24px;
+}
+
+.column:hover {
+    filter: brightness(150%);    
 }
 
 .link {
