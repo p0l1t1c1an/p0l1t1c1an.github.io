@@ -1,0 +1,58 @@
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0% auto;
+    text-align: left;
+    max-width: 1920px;
+    min-width: 650px;
+}
+
+body {
+    --red: #e00000;
+    --purple: #a000a0;
+	--blue: #2a6dd3;
+    --background: #15151f;
+    --text: #ffffff;
+    --text2: #b0b0d0;
+
+    background-color: var(--background);
+	color: var(--text);
+    font-family: Monospace;
+	height: 100%;
+	max-width: 100%;
+    margin: auto;
+    clear: both;
+}
+
+body a:link {
+	color: var(--blue);
+}
+
+body a:visited {
+	color: var(--purple);
+}
+
+body a:active {
+    color: var(--red);
+}
+
+body article {
+    padding: 4px;
+    line-height: 185%;
+    margin: 1% auto;
+    max-width: 650px;
+    font-size: 14px;
+    color: var(--text2);
+}
+
+body h2 {
+    font-size: 28px;
+	color: var(--text);
+}
+
+body h1 {
+	color: var(--text);
+}
+

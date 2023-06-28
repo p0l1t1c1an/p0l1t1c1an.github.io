@@ -1,0 +1,18 @@
+
+@import url("/assets/css/base.css");
+@import url("/assets/css/nav.css");
+
+.link-icon {
+    display: inline;
+    vertical-align: bottom;
+    content: url("/assets/images/github_icon_light.svg");
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    float: right;
+}
+
+.link-icon:hover {
+    content: url("/assets/images/github_icon_blue.svg");
+}
+

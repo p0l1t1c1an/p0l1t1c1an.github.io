@@ -1,0 +1,54 @@
+
+.nav {
+    --red: #e00000;
+	--blue: #2a6dd3;
+    --banner: #15151f;
+    --dropdown: #f9f9f9;
+    --dropdown2: #d9d9d9;
+    --text: #eeeeee;
+    position: sticky;
+    margin: auto;
+    top: 0;
+	background-color: var(--banner) !important;	 
+	width: 650px;
+    overflow: hidden;
+}
+
+.navlist {
+    float: left;
+    max-width: 450px;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navlist-icons {
+    float: right;
+    max-width: 200px;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav .navtab {
+    float: left;
+    padding: 10px 15px;
+    margin: 0px;
+	color: var(--text) !important;
+	text-decoration: none !important;
+    font-family: Monospace;
+    font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+    border-radius: 3px;
+}
+
+.nav .navtab:hover{
+	background-color: var(--red);
+}
+
+.nav .link {
+    max-height: 24px;
+    max-width: 24px;
+}
+
